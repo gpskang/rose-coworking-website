@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import {
     InputOTP,
@@ -15,9 +14,7 @@ import { z } from "zod";
 import { SendOtp, RegisterCoworking, InitiateCoworkingPayment } from "@/apis/api.services";
 import { extractOtp } from "@/lib/otp";
 
-function classNames(...classes: Array<string | false | null | undefined>) {
-    return classes.filter(Boolean).join(" ");
-}
+
 
 type Step = "phone" | "otp" | "form";
 
