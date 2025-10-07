@@ -14,3 +14,11 @@ export const InitiateCoworkingPayment = async (data) => {
     return axiosInstance.post(apiEndpoints.coworkingInitiatePayment, data);
 }
 
+export const FindRegisteredPaidUser = async (data) => {
+    return axiosInstance.post(apiEndpoints.findRegisteredPaidUser, data);
+}
+
+export const GetSystemConfig = async (key) => {
+    return axiosInstance.get(`${apiEndpoints.getSystemConfig}/${key}`);
+}
+

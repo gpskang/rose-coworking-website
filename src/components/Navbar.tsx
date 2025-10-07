@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-
+import Link from "next/link";
 type NavItem = {
   label: string;
   href: string;
@@ -23,10 +23,10 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2">
+            <Link href={'/'} className="flex items-center gap-2">
               <Image src="/img/co-logo.svg" alt="MyStylist" width={28} height={28} />
               <span className="font-semibold text-slate-800">RoSe Co-Working Salon</span>
-            </div>
+            </Link>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
