@@ -40,6 +40,7 @@ export default function Page() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+              className="text-center lg:text-left"
             >
               <motion.h1 
                 className="lg:!text-6xl md:!text-5xl !text-3xl font-bold leading-tight text-black"
@@ -65,19 +66,12 @@ export default function Page() {
                 </motion.span>
               </motion.h1>
 
-              <motion.p
-                className="mt-6 text-lg sm:text-xl text-slate-700 max-w-md"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.1 }}
-              >
-                Join our premium co-working space and unlock your potential in a collaborative environment.
-              </motion.p>
+            
             </motion.div>
 
             {/* Booking Card with Animation */}
             <motion.div 
-              className="justify-self-start lg:w-[450px] lg:justify-self-end"
+              className="justify-self-center lg:w-[450px] lg:justify-self-end"
               initial={{ opacity: 0, x: 50, scale: 0.9 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ 
