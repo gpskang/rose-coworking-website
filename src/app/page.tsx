@@ -90,53 +90,13 @@ export default function Page() {
               >
                 <BookingCard />
                 
-                {/* Floating Animation */}
-                <motion.div
-                  animate={{ 
-                    y: [0, -10, 0],
-                  }}
-                  transition={{ 
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="absolute inset-0 pointer-events-none"
-                  style={{ zIndex: -1 }}
-                >
-                  <div className="w-full h-full bg-gradient-to-br from-teal-100/20 to-blue-100/20 rounded-2xl blur-xl"></div>
-                </motion.div>
               </motion.div>
             </motion.div>
           </div>
         </div>
 
-        {/* Decorative Elements */}
-        <motion.div
-          className="absolute top-20 right-10 w-20 h-20 bg-teal-500/10 rounded-full blur-xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
+      
         
-        <motion.div
-          className="absolute bottom-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-        />
       </section>
 
       {/* About Concept */}
