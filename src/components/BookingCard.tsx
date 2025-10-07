@@ -153,7 +153,7 @@ export default function BookingCard() {
 
     return (
         <motion.div 
-            className="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] border p-4 sm:p-6 w-full"
+            className="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] border p-4 sm:p-6 w-full max-w-sm mx-auto sm:max-w-none sm:mx-0"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
